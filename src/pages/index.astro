@@ -1,0 +1,88 @@
+---
+import OcticonMarkGithub16 from "~icons/octicon/mark-github-16";
+import dayjs from "dayjs";
+import pfp from "./../asset/discord_pfp_2023-11-28.png";
+
+const current_date = dayjs();
+const age = current_date.diff("2004-12-25", "year");
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Awnmp's personal website</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <!-- maybe I shouldn't link a google link...-->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="pb-12 pt-12 text-center text-3xl font-bold text-red-500">
+      <h1>Awnmp's personal website</h1>
+    </header>
+    <div class="flex flex-col items-center">
+      <div class="flex w-full max-w-2xl justify-center">
+        <div class="mr-8 h-72 w-72">
+          <img src={pfp.src} alt="my profile picture" />
+        </div>
+        <div class="w-full">
+          <hr />
+          <h2 class="underline">General information</h2>
+          <ul>
+            <li>firstname: Julia</li>
+            <li>I'm {age} years old</li>
+            <li>pronouns: she/them</li>
+            <li>country: France</li>
+            <li>proudly ⚧</li>
+            <li>dying by the days :)</li>
+          </ul>
+          <br />
+          <h2 class="underline">Links</h2>
+          <ul class="list-disc">
+            <li>
+              <a href="https://github.com/Julia-PBN" target="_blank"
+                >
+                <OcticonMarkGithub16 class="inline" /> Julia-PBN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full max-w-2xl">
+        <h2 class="bold underline">My personal blogs</h2>
+        <ul class="list-disc">
+          <li>
+            <a
+              class="text-red-600 hover:underline"
+              href="https://forem.julialang.org/juliapbn/deep-dive-into-iterators-and-infinite-data-structures-in-julia-24nm"
+              >Deep dive into iterators and infinite data-structures in Julia</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-red-600 hover:underline"
+              href="https://forem.julialang.org/juliapbn/dealing-with-strings-in-julia-patterns-and-anti-patterns-170n"
+              >
+              Dealing with strings in Julia, patterns and anti-patterns
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-red-600 hover:underline"
+              href="https://dev.to/juliapbn/building-fractals-with-the-julia-programming-language-22ao"
+            >
+              Building fractals with the Julia programming language
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background-color: #f2d4d7;
+    }
+  </style>
+</html>
