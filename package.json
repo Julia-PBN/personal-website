@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
-    "@astrojs/cloudflare": "^7.7.1",
+    "@astrojs/cloudflare": "^9.0.1",
     "@astrojs/tailwind": "^5.0.2",
+    "@fontsource/goudy-bookletter-1911": "^5.0.18",
+    "@fontsource/raleway": "^5.0.16",
     "@iconify/json": "^2.2.149",
     "astro": "^3.6.2",
     "dayjs": "^1.11.10",
